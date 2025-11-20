@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chalani Nethranjali Manike — UI/UX & Multimedia Designer</title>
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark"> <header class="site-header">
+    <nav class="nav container">
+      <div class="nav-left"><div class="brand">CN</div></div>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌗</button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="site-bg" role="img" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h4 class="welcome">Welcome to my portfolio</h4>
+          <h1 class="hero-title">Hello, I'm <span class="hero-name">Chalani</span></h1>
+          <h2 class="hero-sub">UI/UX & Multimedia Designer</h2>
+          <p class="hero-desc">
+            A detail-oriented UI/UX & Multimedia Designer crafting user-centered digital experiences for web and mobile platforms.
+          </p>
+          <div class="skill-tags small">
+            <span>Figma</span>
+            <span>Canva</span>
+            <span>Photoshop</span>
+            <span>Illustrator</span>
+            <span>Tailwind CSS</span>
+            <span>React</span>
+          </div>
+          <div class="hero-cta">
+            <a class="btn cta primary" href="#portfolio">See My Work &rarr;</a>
+            <a class="btn cta outline" href="resume.pdf" download><i class="icon-download"></i>Download CV</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="photo-outer">
+            <div class="photo-ring"></div>
+            <img src="images/profile.jpg" alt="Chalani Nethranjali Manike" class="profile-pic" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="lead">Detail-oriented UI/UX and Multimedia Designer passionate about crafting intuitive, user-centered digital experiences for web and mobile platforms.</p>
+        <div class="about-grid">
+          <div class="card">
+            <h4>Education </h4>
+            <p><strong>Bachelor of Information and Communication Technology (Hons)</strong> – University of Colombo (2023–Present)</p>
+          </div>
+          <div class="card">
+            <h4>Work Experience </h4>
+            <p><strong>Junior Graphic Designer</strong> – Supun Colour Photo (2022–2023). Designed posters, banners, and digital ads ensuring brand consistency and quality.</p>
+          </div>
+          <div class="card">
+            <h4>Volunteer & Activities </h4>
+            <ul class="list">
+              <li>Member - Leo Club, University of Colombo</li>
+              <li>Active Member - Art Society, Faculty of Technology</li>
+              <li>Active Member - Buddhist Society, Faculty of Technology</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Skills & Tools </h2>
+        <p class="lead">Design & front-end skills I use to build delightful experiences.</p>
+        <div class="skills-grid compact">
+          <div class="skill"><div class="skill-meta"><strong>Figma</strong><span>95%</span></div><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+          <div class="skill"><div class="skill-meta"><strong>Adobe Photoshop</strong><span>90%</span></div><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+          <div class="skill"><div class="skill-meta"><strong>Illustrator</strong><span>850%</span></div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+          <div class="skill"><div class="skill-meta"><strong>Adobe Animate</strong><span>70%</span></div><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div></div>
+          <div class="skill"><div class="skill-meta"><strong>HTML / CSS</strong><span>75%</span></div><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
+          <div class="skill"><div class="skill-meta"><strong>JavaScript</strong><span>65%</span></div><div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div></div>
+          <div class="skill"><div class="skill-meta"><strong>React (Learning)</strong><span>50%</span></div><div class="skill-bar"><div class="skill-fill" style="width:50%"></div></div></div>
+          <div class="skill"><div class="skill-meta"><strong>GitHub</strong><span>80%</span></div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+          <div class="skill"><div class="skill-meta"><strong>Canva</strong><span>82%</span></div><div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div></div>
+        </div>
+      </div>
+    </section>
+
+
+<br>
+
+
+<h2 class="section-title">Certificates</h2>
+    <div id="certificate-gallery">
+        <div class="certificate-item">
+            <img src="images/1.jpg" alt="AI Powered Design from Udemy" onclick="openModal('modal-1')">
+            <p>AI Powered Design from Udemy</p>
+        </div>
+        <div class="certificate-item">
+            <img src="images/2.jpg" alt="UI/UX for Beginners by GreatLearning" onclick="openModal('modal-2')">
+            <p>UI/UX for Beginners by GreatLearning</p>
+        </div>
+        <div class="certificate-item">
+            <img src="images/3.jpg" alt="Build Website with WordPress" onclick="openModal('modal-3')">
+            <p>Build Website with WordPress</p>
+        </div>
+        <div class="certificate-item">
+            <img src="images/4.jpg" alt="Python for beginners by University Of Moratuwa" onclick="openModal('modal-4')">
+            <p>Python for beginners by University Of Moratuwa</p>
+        </div>
+        <div class="certificate-item">
+            <img src="images/5.jpg" alt="Java programming by GreatLearning" onclick="openModal('modal-5')">
+            <p>Java programming by GreatLearning</p>
+        </div>
+        <div class="certificate-item">
+            <img src="images/6.jpg" alt="IT Essentials By Cisco Networking Academy" onclick="openModal('modal-6')">
+            <p>IT Essentials By Cisco Networking Academy</p>
+        </div>
+        <div class="certificate-item">
+            <img src="images/7.jpg" alt="Introduction to Cyber Security by Simplileran" onclick="openModal('modal-7')">
+            <p>Introduction to Cyber Security by Simplileran</p>
+        </div>
+        <div class="certificate-item">
+            <img src="images/8.jpg" alt="Preventing E-Waste by UNITAR" onclick="openModal('modal-8')">
+            <p>Preventing E-Waste by UNITAR</p>
+        </div>
+        <div class="certificate-item">
+            <img src="images/10.jpg" alt="AI Tools for work smarter By IFS" onclick="openModal('modal-10')">
+            <p>AI Tools for work smarter By IFS</p>
+        </div>
+        <div class="certificate-item">
+            <img src="images/11.jpg" alt="Multi Cloud Networking By AVIATRIX" onclick="openModal('modal-11')">
+            <p>Multi Cloud Networking By AVIATRIX</p>
+        </div>
+        <div class="certificate-item">
+            <img src="images/12.jpg" alt="Oracle Fusion AI Agent Studio Certified Foundations By Oracle" onclick="openModal('modal-12')">
+            <p>Oracle Fusion AI Agent Studio Certified Foundations By Oracle</p>
+        </div>
+        <div class="certificate-item">
+            <img src="images/13.jpg" alt="Oracle Cloud Infrastructure 2025 By Oracle" onclick="openModal('modal-13')">
+            <p>Oracle Cloud Infrastructure 2025 By Oracle</p>
+        </div>
+        <div class="certificate-item">
+            <img src="images/14.jpg" alt="Oracle Cloud Infrastructure 2025 Certified AI Foundations By Oracle" onclick="openModal('modal-14')">
+            <p>Oracle Cloud Infrastructure 2025 Certified AI Foundations By Oracle</p>
+        </div>
+        <div class="certificate-item">
+            <img src="images/15.jpg" alt="Introduction To Audio Engineering By University Of Sri Jayawardhanapura" onclick="openModal('modal-15')">
+            <p>Introduction To Audio Engineering By University Of Sri Jayawardhanapura</p>
+        </div>
+    </div>
+</section>
+
+<div id="modal-1" class="modal">
+    <span class="close" onclick="closeModal('modal-1')">&times;</span>
+    <img class="modal-content" id="img-1" src="images/1.jpg" alt="AI Powered Design from Udemy">
+</div>
+
+<div id="modal-2" class="modal">
+    <span class="close" onclick="closeModal('modal-2')">&times;</span>
+    <img class="modal-content" id="img-2" src="images/2.jpg" alt="UI/UX for Beginners by GreatLearning">
+</div>
+
+<div id="modal-3" class="modal">
+    <span class="close" onclick="closeModal('modal-3')">&times;</span>
+    <img class="modal-content" id="img-3" src="images/3.jpg" alt="Build Website with WordPress">
+</div>
+<div id="modal-4" class="modal"><span class="close" onclick="closeModal('modal-4')">&times;</span><img class="modal-content" id="img-4" src="images/4.jpg" alt="Python for beginners by University Of Moratuwa"></div>
+<div id="modal-5" class="modal"><span class="close" onclick="closeModal('modal-5')">&times;</span><img class="modal-content" id="img-5" src="images/5.jpg" alt="Java programming by GreatLearning"></div>
+<div id="modal-6" class="modal"><span class="close" onclick="closeModal('modal-6')">&times;</span><img class="modal-content" id="img-6" src="images/6.jpg" alt="IT Essentials By Cisco Networking Academy"></div>
+<div id="modal-7" class="modal"><span class="close" onclick="closeModal('modal-7')">&times;</span><img class="modal-content" id="img-7" src="images/7.jpg" alt="Introduction to Cyber Security by Simplileran"></div>
+<div id="modal-8" class="modal"><span class="close" onclick="closeModal('modal-8')">&times;</span><img class="modal-content" id="img-8" src="images/8.jpg" alt="Preventing E-Waste by UNITAR"></div>
+<div id="modal-10" class="modal"><span class="close" onclick="closeModal('modal-10')">&times;</span><img class="modal-content" id="img-10" src="images/10.jpg" alt="AI Tools for work smarter By IFS"></div>
+<div id="modal-11" class="modal"><span class="close" onclick="closeModal('modal-11')">&times;</span><img class="modal-content" id="img-11" src="images/11.jpg" alt="Multi Cloud Networking By AVIATRIX"></div>
+<div id="modal-12" class="modal"><span class="close" onclick="closeModal('modal-12')">&times;</span><img class="modal-content" id="img-12" src="images/12.jpg" alt="Oracle Fusion AI Agent Studio Certified Foundations By Oracle"></div>
+<div id="modal-13" class="modal"><span class="close" onclick="closeModal('modal-13')">&times;</span><img class="modal-content" id="img-13" src="images/13.jpg" alt="Oracle Cloud Infrastructure 2025 By Oracle"></div>
+<div id="modal-14" class="modal"><span class="close" onclick="closeModal('modal-14')">&times;</span><img class="modal-content" id="img-14" src="images/14.jpg" alt="Oracle Cloud Infrastructure 2025 Certified AI Foundations By Oracle"></div>
+<div id="modal-15" class="modal"><span class="close" onclick="closeModal('modal-15')">&times;</span><img class="modal-content" id="img-15" src="images/15.jpg" alt="Introduction To Audio Engineering By University Of Sri Jayawardhanapura"></div>
+ <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">Services I Offer </h2>
+        <div class="services-grid">
+          <div class="service-card"><h3>UI / UX Design</h3><p>Wireframes, prototypes, user research, usability testing, and design systems for intuitive products.</p></div>
+          <div class="service-card"><h3>Web Design</h3><p>Creating responsive, accessible, and interactive web interfaces using modern front-end technologies.</p></div>
+          <div class="service-card"><h3>Branding & Logo</h3><p>Developing complete brand identities, distinctive logos, and consistent visual systems.</p></div>
+          <div class="service-card"><h3>Multimedia & Animation</h3><p>Crafting motion graphics, explainer visuals, and engaging social media content.</p></div>
+        </div>
+      </div>
+    </section>   
+
+<section id="portfolio" class="section alt">
+      <div class="container">
+        <h2 class="section-title">My Recent Work </h2>
+        <div class="portfolio-grid">
+          <article class="portfolio-item" data-project="project1">
+            <img src="images/project1.jpg" alt="FoT TechSphere News App UI" loading="lazy" />
+            <div class="portfolio-meta">
+              <h4>FoT TechSphere News App</h4>
+              <p>Mobile app for university news.</p>
+              <div class="tags"><span>UI/UX</span><span>Mobile</span></div>
+              <button class="btn small view" data-project="project1">View Details</button>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-project="project2">
+            <img src="images/project2.jpg" alt="Kylie Skin Web UI Prototype" loading="lazy" />
+            <div class="portfolio-meta">
+              <h4>Kylie Skin Web UI Prototype</h4>
+              <p>Luxury skincare web UI design.</p>
+              <div class="tags"><span>Web</span><span>UI</span></div>
+              <button class="btn small view" data-project="project2">View Details</button>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-project="project3">
+            <img src="images/project3.jpg" alt="AyurGlow Logo Branding" loading="lazy" />
+            <div class="portfolio-meta">
+              <h4>AyurGlow — Logo & Branding</h4>
+              <p>Ayurvedic skincare brand identity.</p>
+              <div class="tags"><span>Branding</span><span>Logo</span></div>
+              <button class="btn small view" data-project="project3">View Details</button>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-project="project4">
+            <img src="images/project4.jpg" alt="Driving School Management System Dashboard" loading="lazy" />
+            <div class="portfolio-meta">
+              <h4>Driving School Management System</h4>
+              <p>MERN stack web app with UX focus.</p>
+              <div class="tags"><span>Web</span><span>System</span></div>
+              <button class="btn small view" data-project="project4">View Details</button>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-project="project5">
+            <img src="images/project5.jpg" alt="EcoLearn Interactive Platform Screenshot" loading="lazy" />
+            <div class="portfolio-meta">
+              <h4>EcoLearn – Interactive Platform</h4>
+              <p>Multimedia project for environmental awareness.</p>
+              <div class="tags"><span>Multimedia</span><span>Animation</span></div>
+              <button class="btn small view" data-project="project5">View Details</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get in Touch 📧</h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Contact Info</h3>
+            <p>Email: <a href="mailto:chalaninethranjalimanike@gmail.com">chalaninethranjalimanike@gmail.com</a></p>
+            <p>Phone: <a href="tel:+94763647159">+94 76 364 7159</a></p>
+            <p>Location: Colombo, Sri Lanka</p>
+            <div class="socials">
+              <a href="https://linkedin.com/in/chalani-nethranjali-b82a732b5" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://github.com/S-A-C-N-Manike" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+
+          <form id="contactForm" class="contact-card contact-form" novalidate>
+            <h3>Send a Message</h3>
+            <input type="text" name="name" id="c_name" placeholder="Your name" required>
+            <input type="email" name="email" id="c_email" placeholder="Your email" required>
+            <textarea name="message" id="c_message" rows="5" placeholder="Your message" required></textarea>
+            <div class="form-actions">
+              <button class="btn primary" type="submit">Send Message</button>
+              <button class="btn outline" type="reset">Reset</button>
+            </div>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>&copy; <span id="currentYear"></span> Chalani Nethranjali Manike. All rights reserved.</small>
+        <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+      </div>
+    </footer>
+  </main>
+
+  <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content" role="document">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
