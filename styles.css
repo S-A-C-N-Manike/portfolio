@@ -1072,3 +1072,54 @@ body.light .alt {
       margin-bottom: 30px;
   }
 }
+/* Style for the container holding the scroll area and buttons */
+.scroll-wrapper {
+  display: flex;
+  align-items: center; /* Vertically center the buttons */
+  position: relative; /* Allows absolute positioning of buttons if desired */
+}
+
+/* Style for the buttons */
+.nav-button {
+  background: rgba(54, 34, 34, 0.2); /* Semi-transparent background */
+  color: white;
+  border: none;
+  padding: 15px 10px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 0 10px; /* Space buttons from the content */
+  transition: background 0.3s;
+}
+
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Ensure the scroll container takes up the main space */
+.scroll-container {
+  flex-grow: 1; 
+  /* Add your existing scroll styles here */
+}
+.dot-navigator {
+  display: flex;
+  justify-content: center; /* Center the dots */
+  margin-top: 30px; /* Space above the dots */
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 6px;
+  background-color: #504a4a; /* Inactive dot color */
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #007bff; /* Active dot color (or your chosen accent color) */
+  transform: scale(1.2); /* Slightly larger active dot */
+}

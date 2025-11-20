@@ -221,3 +221,79 @@ window.onclick = function(event) {
     setTimeout(() => formStatus.textContent = '', 5000);
   });
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.getElementById('cert-scroll-container');
+  const prevButton = document.querySelector('.prev-button');
+  const nextButton = document.querySelector('.next-button');
+  
+  // *** ADJUST THIS VALUE ***: Card Width + Card Gap
+  const scrollDistance = 320; 
+
+  // Scroll to the next card
+  nextButton.addEventListener('click', () => {
+    container.scrollBy({
+      left: scrollDistance,
+      behavior: 'smooth'
+    });
+  });
+
+  // Scroll to the previous card
+  prevButton.addEventListener('click', () => {
+    container.scrollBy({
+      left: -scrollDistance,
+      behavior: 'smooth'
+    });
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.getElementById('dot-scroll-container');
+  const navigator = document.getElementById('dot-navigator');
+  const cards = container.querySelectorAll('.card');
+
+  // *** ADJUST THIS VALUE ***: Card Width + Card Gap (e.g., 300 + 20)
+  const cardScrollUnit = 320; 
+
+  // --- 1. Create Dots ---
+  cards.forEach((card, index) => {
+    const dot = document.createElement('span');
+    dot.classList.add('dot');
+    dot.dataset.index = index; 
+    navigator.appendChild(dot);
+  });
+
+  const dots = navigator.querySelectorAll('.dot');
+  
+  // Initialize: Set the first dot as active on load
+  if (dots.length > 0) {
+    dots[0].classList.add('active');
+  }
+
+  // --- 2. Dot Click Handler (Jump to Card) ---
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const index = parseInt(dot.dataset.index);
+      const scrollPosition = index * cardScrollUnit; 
+      
+      container.scrollTo({
+        left: scrollPosition,
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  // --- 3. Scroll Handler (Highlight Active Dot) ---
+  container.addEventListener('scroll', () => {
+    const scrollLeft = container.scrollLeft;
+    // Calculate the current index based on how far we've scrolled
+    let currentIndex = Math.round(scrollLeft / cardScrollUnit);
+    
+    // Ensure index doesn't exceed the number of dots
+    currentIndex = Math.min(currentIndex, dots.length - 1); 
+
+    // Update active class
+    dots.forEach((d, i) => {
+      d.classList.remove('active');
+    });
+    dots[currentIndex].classList.add('active');
+  });
+});
