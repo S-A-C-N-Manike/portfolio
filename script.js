@@ -111,11 +111,11 @@ window.onclick = function(event) {
   const modalBody = document.getElementById('modalBody');
 
   const projects = {
-    project1: { title: 'FoT TechSphere News App', img: 'images/project1.jpg', tools: 'Figma, Java, Firebase, Android Studio', desc: 'Mobile news app for Faculty of Technology. Focused on user-friendly UI/UX, wireframing, high-fidelity prototyping, and integration with a Firebase backend.', repo: 'https://github.com/S-A-C-N-Manike/FoT-TechSphere-App' },
-    project2: { title: 'Kylie Skin Web UI Prototype', img: 'images/project2.jpg', tools: 'Figma, Photoshop, Illustrator', desc: 'A high-end website UI prototype for a luxury skincare brand, focusing on elegant layout, color psychology, and responsive design principles.', repo: 'https://github.com/S-A-C-N-Manike/Kylie-Skin-WebUI' },
-    project3: { title: 'AyurGlow — Logo & Branding', img: 'images/project3.jpg', tools: 'Illustrator, Photoshop', desc: 'Complete logo design and brand identity development inspired by Ayurvedic wellness, utilizing natural color palettes and sophisticated typography.', repo: '#' },
-    project4: { title: 'Driving School Management System', img: 'images/project4.jpg', tools: 'React, Tailwind CSS, MERN Stack, Figma', desc: 'A full-stack web application designed for driving school management, featuring intuitive dashboards, scheduling, and user management with a strong UX focus.', repo: 'https://github.com/S-A-C-N-Manike/Driving-School-MERN' },
-    project5: { title: 'EcoLearn – Interactive Environmental Awareness Platform', img: 'images/project5.jpg', tools: 'Adobe Animate, Figma, Photoshop, Illustrator', desc: 'An interactive multimedia project designed to promote environmental conservation through engaging visuals, animation, and a nature-inspired UI.', repo: 'https://github.com/S-A-C-N-Manike/EcoLearn-Multimedia' }
+    project1: { title: 'FoT TechSphere News App', img: 'images/project1.jpg', tools: 'Figma, Java, Firebase, Android Studio', desc: 'Mobile news app for Faculty of Technology. Focused on user-friendly UI/UX, wireframing, high-fidelity prototyping, and integration with a Firebase backend.', repo: 'https://github.com/S-A-C-N-Manike/App_TechSpehre_News.git' },
+    project2: { title: 'Kylie Skin Web UI Prototype', img: 'images/project2.jpg', tools: 'Figma, Photoshop, Illustrator', desc: 'A high-end website UI prototype for a luxury skincare brand, focusing on elegant layout, color psychology, and responsive design principles.', repo: 'https://www.figma.com/proto/HWpf1kd0i0KMn5p4rHchSx/Untitled?node-id=7-100&starting-point-node-id=7%3A100&t=RERc6GeBQTg47L9K-1' },
+    project3: { title: 'AyurGlow — Logo & Branding', img: 'images/project3.jpg', tools: 'Illustrator, Photoshop', desc: 'Complete logo design and brand identity development inspired by Ayurvedic wellness, utilizing natural color palettes and sophisticated typography.', repo: 'https://drive.google.com/drive/folders/1sHXZDRCENzb6d5Ob5Kbm4fW_6UQZTRzN?usp=sharing' },
+    project4: { title: 'Driving School Management System', img: 'images/project4.jpg', tools: 'React, Tailwind CSS, MERN Stack, Figma', desc: 'A full-stack web application designed for driving school management, featuring intuitive dashboards, scheduling, and user management with a strong UX focus.', repo: 'https://github.com/cycotechnolgies/DSMS_MiniProject.git' },
+    project5: { title: 'EcoLearn – Interactive Environmental Awareness Platform', img: 'images/project5.jpg', tools: 'Adobe Animate, Figma, Photoshop, Illustrator', desc: 'An interactive multimedia project designed to promote environmental conservation through engaging visuals,animation and a nature-inspired UI', repo: 'https://drive.google.com/drive/folders/1yWqh3XAIMrqcr2NpCwfycVZQqjJlm162?usp=sharing' }
   };
 
   const showModal = (key) => {
@@ -128,9 +128,9 @@ window.onclick = function(event) {
       <p><strong>Tools & Technologies:</strong> ${data.tools}</p>
       <p>${data.desc}</p>
       <div class="hero-cta" style="margin-top:20px;">
-        <a class="btn primary" href="${data.img}" download>Download Preview</a>
+        
         ${data.repo && data.repo !== '#' ? 
-            `<a class="btn outline" href="${data.repo}" target="_blank" rel="noopener">View Source Code</a>` : 
+            `<a class="btn outline" href="${data.repo}" target="_blank" rel="noopener">View Project</a>` : 
             `<button class="btn outline" disabled>Repo Not Public</button>`
         }
       </div>
